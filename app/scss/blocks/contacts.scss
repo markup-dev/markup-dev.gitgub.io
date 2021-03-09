@@ -1,0 +1,58 @@
+.contacts {
+  padding: 80px 0;
+
+  background-color: $bg;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+
+  &__item {
+    position: relative;
+
+    padding-left: 70px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+
+      height: 50px;
+      width: 50px;
+
+      background-size: contain;
+    }
+
+    &--gmail {
+      &::before {
+        background-image: url('../../images/icons/gmail.svg');
+      }
+    }
+
+    &--vk {
+      &::before {
+        background-image: url('../../images/icons/vk.svg');
+      }
+    }
+
+    &--telegram {
+      &::before {
+        background-image: url('../../images/icons/telegram.svg');
+      }
+    }
+
+    &--github {
+      &::before {
+        background-image: url('../../images/icons/github.svg');
+      }
+    }
+  }
+
+  &__text {
+    @extend %roboto-400;
+    font-size: 24px;
+  }
+}

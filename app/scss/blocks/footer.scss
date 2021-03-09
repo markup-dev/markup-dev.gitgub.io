@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 80px;
+
+  background-color: rgba(105, 141, 150, .9);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  &__top-logo {
+    max-width: 270px;
+    margin-right: auto;
+
+    @extend %raleway-700;
+    font-size: 30px;
+
+    color: #fff;
+  }
+
+  &__top-item {
+    margin-left: 70px;
+  }
+
+  &__top-title {
+    margin-bottom: 20px;
+
+    @extend %raleway-500;
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  &__top-li {
+    margin-bottom: 10px;
+  }
+
+  &__top-link {
+    transition: color .3s;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__bottom-copy {
+    padding: 30px 0;
+
+    @extend %roboto-400;
+    font-size: 18px;
+
+    border-top: 1px solid $font-accent;
+  }
+}

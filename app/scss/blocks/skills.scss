@@ -1,0 +1,30 @@
+.skills {
+  padding: 80px 0;
+
+  background-color: $bg;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 30px;
+    padding: 10px;
+
+    text-transform: uppercase;
+    @extend %roboto-500;
+    font-size: 18px;
+
+    list-style: upper-roman;
+  }
+
+  &__slider {
+    margin-top: 60px;
+  }
+
+  &__slider-img {
+    margin: 0 auto;
+  }
+}
