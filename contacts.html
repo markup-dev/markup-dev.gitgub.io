@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — BakS eSports</title>
+  <meta name="description"
+    content="Контакты киберспортивного клуба BakS eSports: адрес, email, телефон, форма обратной связи, соцсети.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">
+          <img src="images/logo.svg" alt="BakS eSports" class="logo__img">
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="team.html" class="nav__link">Команда</a>
+            </li>
+            <li class="nav__item">
+              <a href="news.html" class="nav__link">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__link nav__link_active">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">О клубе</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger" aria-label="Открыть меню"><span></span></button>
+      </div>
+    </div>
+    <div class="header__overlay"></div>
+  </header>
+  <main class="main" role="main">
+    <section class="contacts-page">
+      <div class="container">
+        <h1 class="title title__page">Контакты</h1>
+        <div class="contacts-page__grid">
+          <div class="contacts-page__info">
+            <div class="contacts-page__block contacts-page__block--form">
+              <h2 class="contacts-page__subtitle">Форма обратной связи</h2>
+              <form class="contacts-form" autocomplete="off">
+                <div class="contacts-form__row">
+                  <div class="contacts-form__field">
+                    <label for="contacts-name" class="contacts-form__label">Ваше имя</label>
+                    <input type="text" class="contacts-form__input" id="contacts-name" name="name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="contacts-form__field">
+                    <label for="contacts-email" class="contacts-form__label">Email</label>
+                    <input type="email" class="contacts-form__input" id="contacts-email" name="email" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="contacts-form__row">
+                  <div class="contacts-form__field">
+                    <label for="contacts-subject" class="contacts-form__label">Тема сообщения</label>
+                    <input type="text" class="contacts-form__input" id="contacts-subject" name="subject" placeholder="Тема сообщения" required>
+                  </div>
+                </div>
+                <div class="contacts-form__row">
+                  <div class="contacts-form__field">
+                    <label for="contacts-message" class="contacts-form__label">Сообщение</label>
+                    <textarea class="contacts-form__textarea" id="contacts-message" name="message" placeholder="Сообщение" required></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn contacts-form__btn">Отправить</button>
+              </form>
+            </div>
+            <div class="contacts-page__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.7299831461246!2d37.40941409989527!3d55.641753513672136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5526c1d37f755%3A0xdbc6846df47ddd63!2z0YPQuy4g0JDQstC40LDRgtC-0YDQvtCyLCAzMCwg0JzQvtGB0LrQstCwLCAxMTk2MjA!5e0!3m2!1sru!2sru!4v1750594747426!5m2!1sru!2sru"
+                width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="contacts-page__block">
+            <h2 class="contacts-page__subtitle">Связаться с нами</h2>
+            <ul class="contacts-page__list">
+              <li class="contacts-page__item"><b>Адрес:</b> г. Москва, ул. Киберспортсменов, 1</li>
+              <li class="contacts-page__item"><b>Email:</b> <a href="mailto:baksesports@gmail.com"
+                  class="contacts-page__link">baksesports@gmail.com</a></li>
+              <li class="contacts-page__item"><b>Телефон:</b> <a href="tel:+79991234567" class="contacts-page__link">+7
+                  (999)
+                  123-45-67</a></li>
+            </ul>
+            <div class="socials contacts-page__socials">
+              <a href="https://vk.com/" class="socials__link" target="_blank" aria-label="ВКонтакте">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12.64 17.5c-5.52 0-8.64-3.84-8.77-10.5h2.92c.09 5.13 2.36 7.27 4.01 7.66V7h2.67v4.13c1.62-.17 3.32-2.01 3.89-4.13h2.8c-.44 2.5-2.23 4.34-3.51 5.11 1.28.62 3.23 2.23 3.8 5.39h-3.01c-.54-1.89-1.88-3.5-3.17-3.66v3.66h-.63z"
+                    fill="#FF5500" />
+                </svg>
+              </a>
+              <a href="https://t.me/" class="socials__link" target="_blank" aria-label="Telegram">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M21.75 4.75l-3.5 15.5c-.13.56-.5.7-1 .44l-4.25-3.13-2.05 1.97c-.23.23-.42.42-.86.42l.31-4.38 7.99-7.22c.35-.31-.08-.48-.54-.17l-9.87 6.2-4.25-1.33c-.58-.18-.59-.58.12-.85l17-6.56c.39-.14.73.09.6.84z"
+                    fill="#FF5500" />
+                </svg>
+              </a>
+              <a href="https://twitch.tv/" class="socials__link" target="_blank" aria-label="Twitch">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M4.285 2L2 5.143v15.142h5.143V22h3.429l3.429-3.429h4.114L22 16.286V2H4.285zm15.143 13.715l-1.286 1.286h-4.714L9 20.143v-3.142H4.286V3.429h15.142v12.286zM16.286 7.714h-1.286v4.286h1.286V7.714zm-3.429 0h-1.286v4.286h1.286V7.714z"
+                    fill="#FF5500" />
+                </svg>
+              </a>
+              <a href="https://youtube.com/" class="socials__link" target="_blank" aria-label="YouTube">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.1 6 12 6 12 6s-6.1 0-7.86.06a2.75 2.75 0 0 0-1.94 1.94A28.6 28.6 0 0 0 2 12a28.6 28.6 0 0 0 .2 3.999 2.75 2.75 0 0 0 1.94 1.94C5.9 18 12 18 12 18s6.1 0 7.86-.06a2.75 2.75 0 0 0 1.94-1.94A28.6 28.6 0 0 0 22 12a28.6 28.6 0 0 0-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"
+                    fill="#FF5500" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--logo">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="BakS eSports" class="logo__img">
+          </a>
+        </div>
+        <div class="footer__col footer__col--contacts">
+          <div class="footer__label">Контакты:</div>
+          <ul class="footer__list footer__list--contacts">
+            <li class="footer__info">г. Москва</li>
+            <li class="footer__info"><a href="mailto:baksesports@gmail.com"
+                class="footer__contact-link">baksesports@gmail.com</a></li>
+            <li class="footer__info"><a href="tel:+79991234567" class="footer__contact-link">+7 (999) 123-45-67</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--nav">
+          <div class="footer__label">Навигация:</div>
+          <ul class="footer__list footer__list--nav">
+            <li><a href="about.html" class="footer__nav-link">О клубе</a></li>
+            <li><a href="team.html" class="footer__nav-link">Команда</a></li>
+            <li><a href="news.html" class="footer__nav-link">Новости</a></li>
+            <li><a href="contacts.html" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--socials">
+          <div class="footer__label">Мы в соцсетях:</div>
+          <div class="socials">
+            <a href="https://vk.com/" class="socials__link" target="_blank" aria-label="ВКонтакте">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12.64 17.5c-5.52 0-8.64-3.84-8.77-10.5h2.92c.09 5.13 2.36 7.27 4.01 7.66V7h2.67v4.13c1.62-.17 3.32-2.01 3.89-4.13h2.8c-.44 2.5-2.23 4.34-3.51 5.11 1.28.62 3.23 2.23 3.8 5.39h-3.01c-.54-1.89-1.88-3.5-3.17-3.66v3.66h-.63z"
+                  fill="#FF5500" />
+              </svg>
+            </a>
+            <a href="https://t.me/" class="socials__link" target="_blank" aria-label="Telegram">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21.75 4.75l-3.5 15.5c-.13.56-.5.7-1 .44l-4.25-3.13-2.05 1.97c-.23.23-.42.42-.86.42l.31-4.38 7.99-7.22c.35-.31-.08-.48-.54-.17l-9.87 6.2-4.25-1.33c-.58-.18-.59-.58.12-.85l17-6.56c.39-.14.73.09.6.84z"
+                  fill="#FF5500" />
+              </svg>
+            </a>
+            <a href="https://twitch.tv/" class="socials__link" target="_blank" aria-label="Twitch">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4.285 2L2 5.143v15.142h5.143V22h3.429l3.429-3.429h4.114L22 16.286V2H4.285zm15.143 13.715l-1.286 1.286h-4.714L9 20.143v-3.142H4.286V3.429h15.142v12.286zM16.286 7.714h-1.286v4.286h1.286V7.714zm-3.429 0h-1.286v4.286h1.286V7.714z"
+                  fill="#FF5500" />
+              </svg>
+            </a>
+            <a href="https://youtube.com/" class="socials__link" target="_blank" aria-label="YouTube">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.1 6 12 6 12 6s-6.1 0-7.86.06a2.75 2.75 0 0 0-1.94 1.94A28.6 28.6 0 0 0 2 12a28.6 28.6 0 0 0 .2 3.999 2.75 2.75 0 0 0 1.94 1.94C5.9 18 12 18 12 18s6.1 0 7.86-.06a2.75 2.75 0 0 0 1.94-1.94A28.6 28.6 0 0 0 22 12a28.6 28.6 0 0 0-.2-3.999zM10 15.5v-7l6 3.5-6 3.5z"
+                  fill="#FF5500" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">© 2025 BakS eSports</p>
+    </div>
+  </footer>
+  <script src="js/burger.js"></script>
+</body>
+
+</html>
